@@ -1,6 +1,23 @@
 //
 console.log('Application');
 //
+// Example 1 : using the generated single application JS
+var app = require('./hxApp.js');
+console.log('==========================');
+console.log(app);
+console.log('==========================');
+
+// example : 1 : to make new Animal
+var animal_1 = new app.Animal('CAT',9);
+// example : 2 : to make new Animal, save the Constructor as a new "var" and then use it 
+var Animal = app.Animal;
+var animal_2 = new Animal('Tiger',6);
+//lets log
+console.log(animal_1);
+console.log(animal_2);
+
+//Example 2 : Using individual Class from the single JS
+
 /*
 var o = require('./Jungle');
 var Animal = o.Animal;
@@ -25,9 +42,7 @@ var c = new o.Animal('Cat',4);
 console.log(c);
 */
 
-var app = require('./hxApp.js');
-console.log('==========================');
-console.log(app);
+
 
 
 /*
