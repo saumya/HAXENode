@@ -1,0 +1,37 @@
+# Explaining all possible HXML params for JS output
+
+# ########################################################
+# 1
+# Without -main
+# working in command line
+# haxe -js com/jungle/Tree.js -cp src com.jungle.Tree
+# ########################################################
+
+# ########################################################
+# 2
+# For single file outputs
+# -js com/jungle/Tree.js 
+# -cp src 
+# com.jungle.Tree
+# --next
+# -js com/jungle/Animal.js 
+# -cp src 
+# com.jungle.Animal
+# ########################################################
+
+# ########################################################
+# 3
+# For 1 compiled output JS
+# [No Main] (js:No output)
+# -main ApplicationEntry
+# -js app.js
+# ########################################################
+
+
+-js bin/Tree.js 
+-cp src 
+com.jungle.Tree
+--next
+-js bin/Animal.js 
+-cp src 
+com.jungle.Animal
