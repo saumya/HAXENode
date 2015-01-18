@@ -4,7 +4,7 @@
 //
 console.log('Application');
 //
-/*
+
 // 1. Example 1 : using the generated single application JS
 var app = require('./hxApp.js');
 console.log('==========================');
@@ -19,8 +19,9 @@ var animal_2 = new Animal('Tiger',6);
 //lets log
 console.log(animal_1);
 console.log(animal_2);
-*/
 
+
+/*
 //Example 2 : Using individual Class from the single JS
 var o = require('./Animal');
 var Animal = o.Animal;
@@ -36,6 +37,7 @@ console.log('===================');
 console.log(a1.getType());
 console.log(a1.getAge());
 console.log('===================');
+*/
 
 
 
