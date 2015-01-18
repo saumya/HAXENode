@@ -24,10 +24,15 @@
 # For 1 compiled output JS
 # [No Main] (js:No output)
 # -main ApplicationEntry
-# -js app.js
+# -js bin/hxApp.js
 # ########################################################
 
-
+# Generates one single application JS
+-main ApplicationEntry
+-js bin/hxApp.js
+#
+--next
+# Generates JS file for individual hx files
 -js bin/Tree.js 
 -cp src 
 com.jungle.Tree
@@ -35,3 +40,24 @@ com.jungle.Tree
 -js bin/Animal.js 
 -cp src 
 com.jungle.Animal
+--next
+-js bin/Jungle.js 
+-cp src 
+com.jungle.Jungle
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

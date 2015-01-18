@@ -2,10 +2,12 @@
 console.log('Application');
 //
 /*
-var o = require('./Animal');
+var o = require('./Jungle');
 var Animal = o.Animal;
+
 console.log(o);
 console.log(o.Animal);
+
 
 var a1 = new Animal('Lion',5);
 var a2 = new Animal('Tiger',8);
@@ -18,8 +20,17 @@ console.log(a1.getAge());
 console.log('-------------------');
 console.log(a1.age);
 console.log(a1.type);
+
+var c = new o.Animal('Cat',4);
+console.log(c);
 */
 
+var app = require('./hxApp.js');
+console.log('==========================');
+console.log(app);
+
+
+/*
 //Node Way
 
 // Uses modules.exports = function(){}
@@ -38,6 +49,7 @@ console.log(a1.age);
 console.log(a1.type);
 
 console.log(a2);
+*/
 
 /*
 var Animal = o.Animal;
